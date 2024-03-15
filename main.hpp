@@ -23,4 +23,16 @@ void getTwoValues( int &begin, int &end) {
     } while (begin >= end);
 }
 
+int getNextPrime(int begin) {
+    while (true) {
+        if (isPrime(++begin))
+            return begin;
+    }
+}
 
+int getPrevPrime(int end) {
+    while (true) {
+        if(isPrime(--end))
+        return end;
+    }
+}
